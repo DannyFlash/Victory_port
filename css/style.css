@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(/images/mountains.jpg);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    width: 100%;
+    top:0;
+    overflow: hidden;
+    position: fixed;
+    background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.9));
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    color: rgb(201, 198, 198);
+    letter-spacing: 3px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.logo span{
+    color: gold;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 32%;
+}
+.nav-links a{
+    color:rgb(201, 198, 198);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.nav-links a:hover{
+    font-size: 16px;
+    color: gold;
+}
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color:rgb(201, 198, 198);
+    margin: 3px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    background: gold;
+}
+.burger{
+    display: none;
+}
+
+/*information*/
+
+.information{
+    position: absolute;
+    top: 35%;
+    text-align: left;
+    z-index: -1;
+    left: 4%;
+}
+
+.info p{
+    font-size: 70px;
+    color: gold;
+    margin-bottom: 10px;
+}
+.info h2{
+    font-size: 60px;
+    color: rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+.info span{
+    text-align: center;
+    font-size: 45px;
+    color: gold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+    .info-btn{
+        background-color: gold;
+        outline: none;
+        border: none;
+        padding: 15px 40px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+    .info-btn a{
+        text-decoration: none;
+        color: white;
+        outline: none;
+    }
+    .info-btn:hover{
+        background: rgb(61, 52, 3);
+        cursor: pointer;
+    }
+    .container{
+        margin: auto;
+    }
+    
+    .info-footer{
+        margin-top: 35px;
+    }
+    i{
+        color: gold;
+        margin-right: 20px;
+    }
+    i:hover{
+        color: rgb(61, 52, 3);
+    }
+
+
+    /* About me*/
+    .about-me .container{
+        width: 80%;
+        margin: auto;
+    }
+    .about-me{
+        position: absolute;
+        top: 20%;
+        z-index: -1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about-me h2{
+        color: rgb(187, 183, 183);
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .about-me header{
+        color: rgb(187, 183, 183);
+        margin-bottom: 10px;
+    }
+    .about-me p{
+        color: black;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+    .about-me.button{
+        margin-bottom: 30px;
+    }
+    .about1{
+        background: gold;
+        padding: 50px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        box-shadow: 5px 2px 5px  rgb(243, 211, 29);
+        transition: all 0.8s ease;
+       
+    }
+    .about1:hover{
+        background: rgb(196, 167, 4);
+        transform: scale(1.03);
+    }
+
+    
+    /*-----logos---------*/
+    .logoi{
+        position: absolute;
+        top: 10%;
+        z-index: -1;
+       background: gray;
+    }
+    .logoi .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    .loggo img{
+        width: 100%;
+        margin: 25px 0;
+        border-radius: 17px;
+        transform: scale(1);
+        transition: transform 0.8s ease-in-out;
+        cursor: pointer;
+        box-shadow: 6px 6px rgb(85, 84, 84);
+    }
+
+    .loggo{
+        display: grid;
+        grid-template-columns:repeat(2, auto);
+        grid-gap: 20px;
+    }
+    figure:hover img{
+        transform: scale(1.03);
+    }
+
+    /*-------flyers---------*/
+    .flyers{
+        position: absolute;
+        top: 10%;
+        z-index: -1;
+       background: gray;
+    }
+    .flyers .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    .flyer{
+        display: grid;
+        grid-template-columns:repeat(2, auto);
+        grid-gap: 20px;
+    }
+
+    .flyer img{
+        width: 100%;
+        margin: 25px 0;
+        border-radius: 17px;
+        transform: scale(1);
+        transition: transform 0.8s ease-in-out;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 6px 6px rgb(85, 84, 84);
+    }
+    figure:hover img{
+        transform: scale(1.03);
+    }
+
+ /*----contacts------*/
+
+ .contacts{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+    width: 80%;
+    z-index: -1;
+    padding-bottom: 40px;
+}
+.contacts .info-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-footer p{
+    color: gold;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+.info-footer p:hover{
+    color: rgb(61, 52, 3);
+}
+
+
+   
+
+@media (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.9));
+        top: 8vh;
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        transform: translatex(100%);
+        transition: transform 0.5s ease-out;
+        z-index: 999;
+    }
+    .nav-links li{
+        opacity: 1;
+    }
+
+    .burger{
+        display: block;
+        
+    }
+
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+        /*information*/
+
+.information{
+    position: absolute;
+    top: 35%;
+    text-align: left;
+    z-index: -1;
+    left: 4%;
+}
+
+.info p{
+    font-size: 37px;
+    color: gold;
+    margin-bottom: 10px;
+}
+.info h2{
+    font-size: 38px;
+    color: rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+.info span{
+    text-align: center;
+    font-size: 25px;
+    color: gold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+    .info-btn{
+        background-color: gold;
+        outline: none;
+        border: none;
+        padding: 10px 25px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+    .info-btn a{
+        text-decoration: none;
+        color: white;
+        outline: none;
+    }
+    .info-btn:hover{
+        background: rgb(61, 52, 3);
+        cursor: pointer;
+    }
+    .container{
+        margin: auto;
+      
+    }
+
+    .info-footer{
+        margin-top: 35px;
+    }
+    i{
+        color: gold;
+        margin-right: 20px;
+        margin-bottom: 49px;
+    }
+    i:hover{
+        color: rgb(61, 52, 3);
+    }
+
+    /* About me*/
+    .about-me .container{
+        width: 80%;
+        margin: auto;
+    }
+    .about-me{
+        position: absolute;
+        top: 20%;
+        z-index: -1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about-me h2{
+        color: rgb(187, 183, 183);
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .about-me header{
+        color: rgb(187, 183, 183);
+        margin-bottom: 10px;
+    }
+    .about-me p{
+        color: black;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+    .about-me.button{
+        margin-bottom: 30px;
+    }
+    .about1{
+        background: gold;
+        padding: 50px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        box-shadow: 5px 2px 5px  rgb(243, 211, 29);
+        transition: all 0.8s ease;
+       
+    }
+    .about1:hover{
+        background: rgb(196, 167, 4);
+        transform: scale(1.03);
+    }
+
+    /*-----logos---------*/
+    .logoi{
+        position: absolute;
+        top: 10%;
+        z-index: -1;
+       background: gray;
+       display: block;
+    }
+    .logoi .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    .loggo{
+        display: block;
+    }
+
+    .loggo img{
+        width: 100%;
+        margin: 25px 0;
+        border-radius: 17px;
+        transform: scale(1);
+        transition: transform 0.8s ease-in-out;
+        cursor: pointer;
+       
+    }
+    figure:hover img{
+        transform: scale(1.03);
+    }
+
+    /*-------flyers---------*/
+    .flyers{
+        position: absolute;
+        top: 10%;
+        z-index: -1;
+       background: gray;
+    }
+    .flyers .container{
+        width: 80%;
+        margin: auto;
+    }
+    .flyer{
+        display: block;
+    }
+    .flyer img{
+        width: 100%;
+        margin: 25px 0;
+        border-radius: 17px;
+        transform: scale(1);
+        transition: transform 0.8s ease-in-out;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 6px 6px rgb(85, 84, 84);
+    }
+    figure:hover img{
+        transform: scale(1.03);
+    }
+
+    /*----contacts------*/
+
+    .contacts{
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: gray;
+        width: 80%;
+        z-index: -1;
+        padding-bottom: 0;
+    }
+    .contacts .info-footer{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .info-footer p{
+        color: gold;
+        font-weight: bold;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .info-footer p:hover{
+        color: rgb(61, 52, 3);
+    }
+
+
+
+
+
+
+
+}
